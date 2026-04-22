@@ -17,6 +17,7 @@ public class Task2 {
             linkedList.add(i);
         }
 
+        System.out.println("------------------------------------------");
         measureGet(arrayList,"Array (get)");
         measureGet(linkedList,"Linked (get)");
 
@@ -28,7 +29,7 @@ public class Task2 {
 
         //Linkedlist tager generelt længere tid, da man gennemsnitligt skal igennem flere led før man er på det rette index
         //Array har nemmere access til et specifikt index.
-
+        System.out.println("------------------------------------------");
         //_____________________________
         List<Integer> arrayList2 = new ArrayList<>();
         Set<Integer> hashSet = new HashSet<>();
@@ -53,7 +54,7 @@ public class Task2 {
         //Arraylist iterere gennem hele listen for at finde det vi leder efter. O(n)
         //Hashset'et hasher der vi leder efter og springer direkte til den bucket, hvor der ligger det vi leder efter O(1)
         // worst case O(n)
-
+        System.out.println("------------------------------------------");
         //__________________________
 
             Set<Movie> hashSet2 = new HashSet<>();
@@ -73,9 +74,10 @@ public class Task2 {
 
             System.out.println("Treeset contains Titanic: " + treeSet.contains(m1));
             treeSet.remove(m1);
-
+        System.out.println("------------------------------------------");
         measureSet(new HashSet<>(), "HashSet");
         measureSet(new TreeSet<>(), "TreeSet");
+
 
         /*
         Hashsettet bruger hashing/equals til at slå en værdi op direkte. Den
@@ -149,9 +151,9 @@ public class Task2 {
         set.remove(new Movie("Anyone But You", 6));
         long endRemove = System.nanoTime();
 
-        System.out.println(name + " ADD: " + (endAdd - startAdd));
-        System.out.println(name + " CONTAINS: " + (endContains - startContains));
-        System.out.println(name + " REMOVE: " + (endRemove - startRemove));
+        System.out.println(name + " ADD: " + (endAdd - startAdd)+ " ns");
+        System.out.println(name + " CONTAINS: " + (endContains - startContains)+ " ns");
+        System.out.println(name + " REMOVE: " + (endRemove - startRemove)+ " ns");
     }
 
 }

@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a9a5430-e83d-4879-8d5e-c9086862fc55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Task2/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Task2/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Bubblesort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/searchandsort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/searchandsort/util/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/Task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Task2/Task2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MaleneNR"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/MaleneNR/AvanProg.git",
@@ -54,17 +62,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BigOExamples.executor": "Run",
+    "Application.Bubblesort.executor": "Run",
     "Application.CycleDetector.executor": "Run",
     "Application.HashSetMutationDemo.executor": "Run",
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "Application.MazeExercise.executor": "Run",
     "Application.MazeSolution.executor": "Debug",
+    "Application.MergeSort.executor": "Debug",
     "Application.MoneyHandler.executor": "Run",
     "Application.MysteryInspector.executor": "Run",
     "Application.MysteryInspectorSolution.executor": "Run",
     "Application.Quiz.executor": "Run",
     "Application.SearchStrategies.executor": "Run",
-    "Application.Task1.executor": "Run",
     "Application.Task2.executor": "Run",
     "Application.TreeSetMutationDemo.executor": "Run",
     "Application.TryBacktrack.executor": "Run",
@@ -92,7 +101,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "Task1+2",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kong/OneDrive - Erhvervsakademi København/Dokumenter/Valgfag/Avanceret Programmering/F26/AvanceretProgrammeringF26",
+    "last_opened_file_path": "C:/Users/kong/OneDrive - Erhvervsakademi København/Dokumenter/Valgfag/Materialer/F26/AvanceretProgrammeringF26",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -123,20 +132,20 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="searchandsort" />
       <recent name="algorithms.mazesolution" />
       <recent name="algorithms.reversedlinkedlist" />
       <recent name="algorithms.reversedlinkedlistsolution" />
       <recent name="algorithms.circularlinkedlist" />
+      <recent name="concurrency.executorexercise" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task2">
-    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="quirks.Quiz" />
+  <component name="RunManager" selected="Application.MergeSort">
+    <configuration name="Bubblesort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searchandsort.Bubblesort" />
       <module name="AvanceretProgrammering" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="quirks.*" />
+          <option name="PATTERN" value="searchandsort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +153,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searchandsort.Task1" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searchandsort.Main" />
       <module name="AvanceretProgrammering" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searchandsort.Task2.*" />
+          <option name="PATTERN" value="searchandsort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searchandsort.MergeSort" />
+      <module name="AvanceretProgrammering" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="searchandsort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,19 +185,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="searchandsort.Task2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="reflection.annotations.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reflection.annotations.Main" />
-      <module name="AvanceretProgrammering" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reflection.annotations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,19 +206,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Task1" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Bubblesort" />
+      <item itemvalue="Application.MergeSort" />
       <item itemvalue="Application.Task2" />
-      <item itemvalue="Application.Quiz" />
-      <item itemvalue="Application.reflection.annotations.Main" />
       <item itemvalue="Application.reflection.annotations_solution.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Bubblesort" />
         <item itemvalue="Application.Task2" />
-        <item itemvalue="Application.Task1" />
-        <item itemvalue="Application.Quiz" />
         <item itemvalue="Application.reflection.annotations_solution.Main" />
-        <item itemvalue="Application.reflection.annotations.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +282,10 @@
       <workItem from="1747637016104" duration="240000" />
       <workItem from="1774267761237" duration="8502000" />
       <workItem from="1775647546580" duration="34000" />
-      <workItem from="1776271854757" duration="7540000" />
+      <workItem from="1775647728297" duration="722000" />
+      <workItem from="1775912027806" duration="594000" />
+      <workItem from="1775975157933" duration="2537000" />
+      <workItem from="1776681557496" duration="9841000" />
     </task>
     <servers />
   </component>
@@ -307,6 +319,20 @@
           <url>file://$PROJECT_DIR$/src/main/java/algorithms/backtracking/TryBacktrack.java</url>
           <line>55</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/searchandsort/MergeSort.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/searchandsort/Bubblesort.java</url>
+          <line>13</line>
+          <properties class="searchandsort.Bubblesort" method="bubbleSort">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

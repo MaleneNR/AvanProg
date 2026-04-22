@@ -8,9 +8,9 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-         testComplexity();
+         //testComplexity();
        // testLinearAndBinarySearch();
-       // testSort();
+       testSort();
 
     }
 
@@ -45,7 +45,7 @@ public class Main {
 
     private static void testLinearAndBinarySearch() {
         List<Student> students = new ArrayList<>();
-        Factory.fillWithStudents(students, 100000);
+        Factory.fillWithStudents(students, 4000);
 
         int targetId = 99999; // sidst i listen, så forskellen er tydelig!
 
@@ -70,17 +70,17 @@ public class Main {
 
     private static void testSort() {
         List<Student> original = new ArrayList<>();
-        Factory.fillWithStudents(original, 100000); // eller fx 10_000 til hurtigere test
+        Factory.fillWithStudents(original, 10); // eller fx 10_000 til hurtigere test
       //  Collections.shuffle(original);
 
-        // Bubble Sort (langsom)
+       /* // Bubble Sort (langsom)
         List<Student> bubbleList = new ArrayList<>(original);
         long start = System.currentTimeMillis();
      //   SortExamples.bubbleSort(bubbleList);
         long stop = System.currentTimeMillis();
         System.out.println("Bubble Sort - tid: " + (stop - start) + " ms");
 
-        // Heap Sort
+        // Heap Sort  - O(n logn),
         List<Student> heapList = new ArrayList<>(original);
         start = System.currentTimeMillis();
         SortExamples.heapSort(heapList);
@@ -89,9 +89,9 @@ public class Main {
 
         // Quick Sort
         List<Student> quickList = new ArrayList<>(original);
-        start = System.currentTimeMillis();
+        long start = System.currentTimeMillis();
         SortExamples.quickSort(quickList, 0, quickList.size() - 1);
-        stop = System.currentTimeMillis();
+        long stop = System.currentTimeMillis();
         System.out.println("Quick Sort - tid: " + (stop - start) + " ms");
 
         // Merge Sort
@@ -99,7 +99,7 @@ public class Main {
         start = System.currentTimeMillis();
         SortExamples.mergeSort(mergeList);
         stop = System.currentTimeMillis();
-        System.out.println("Merge Sort - tid: " + (stop - start) + " ms");
+        System.out.println("Merge Sort - tid: " + (stop - start) + " ms");*/
     }
 
 
